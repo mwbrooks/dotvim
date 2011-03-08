@@ -1,6 +1,6 @@
 set nocompatible                  " Must come first because it changes other options.
 
-scriptencoding utf-8              " Allow UTF-8 symbols for listchars
+set encoding=utf-8                " Allow UTF-8 symbols for listchars
 
 " Load Pathogen
 silent! call pathogen#runtime_append_all_bundles()
@@ -27,6 +27,8 @@ set ruler                         " Show cursor position.
 
 set incsearch                     " Highlight matches as you type.
 set hlsearch                      " Highlight matches.
+set ignorecase
+set smartcase
 
 set wrap                          " Turn on line wrapping.
 set scrolloff=3                   " Show 3 lines of context around the cursor.
@@ -56,7 +58,7 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLo
 colorscheme ir_black 
 
 " Tab mappings.
-map <leader>tt :tabnew<cr>
+" map <leader>tt :tabnew<cr>
 map <leader>te :tabedit
 map <leader>tc :tabclose<cr>
 map <leader>to :tabonly<cr>
@@ -66,29 +68,19 @@ map <leader>tf :tabfirst<cr>
 map <leader>tl :tablast<cr>
 map <leader>tm :tabmove
 
-" Uncomment to use Jamis Buck's file opening plugin
-" map <Leader>t :FuzzyFinderTextMate<Enter>
+" NERDTree configuration
+let NERDTreeIgnore=['\.rbc$', '\~$']
+map <Leader>n :NERDTreeToggle<CR>
 
-" Controversial...swap colon and semicolon for easier commands
-"nnoremap ; :
-"nnoremap : ;
+" Command-T configuration
+let g:CommandTMaxHeight=20
 
-"vnoremap ; :
-"vnoremap : ;
+" Remember last location in file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+    \| exe "normal g'\"" | endif
+endif
 
-" Automatic fold settings for specific files. Uncomment to use.
-" autocmd FileType ruby setlocal foldmethod=syntax
-" autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
-
-" Use current file's directory as working directory
-" If autochdir does not exist, then implement our own 
-" if exists('+autochdir')
-"   set autochdir
-" else
-"   function AlwaysCD()
-"     if bufname("") !~ "^ftp://"
-"       lcd %:p:h
-"     endif
-"   endfunction
-"   autocmd BufEnter * call AlwaysCD()
-" end
+" Enable syntastic syntax checking
+let g:syntastic_enable_signs=1
+let g:syntastic_quiet_warnings=1

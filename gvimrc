@@ -1,15 +1,30 @@
-" Example Vim graphical configuration.
-" Copy to ~/.gvimrc or ~/_gvimrc.
+if has("gui_macvim")
+    " Fullscreen
+    set fuopt=maxhorz,maxvert
+
+    " Command-Return for fullscreen
+    macmenu Window.Toggle\ Full\ Screen\ Mode key=<D-CR>
+
+    " Command-T for CommandT
+    macmenu &File.New\ Tab key=<D-T>
+    map <D-t> :CommandT<CR>
+    imap <D-t> <Esc>:CommandT<CR>
+
+    " Command-Shift-F for Ack
+    map <D-F> :Ack<space>
+
+    " Command-/ to toggle comments
+    map <D-/> <plug>NERDCommenterToggle<CR>
+
+    " Command-][ to increase/decrease indentation
+    vmap <D-]> >gv
+    vmap <D-[> <g
+endif
+
 
 set guifont=DejaVuSansMono:h12    " Font family and font size.
 set antialias                     " MacVim: smooth fonts.
 set encoding=utf-8                " Use UTF-8 everywhere.
 set guioptions-=T                 " Hide toolbar.
-"set fuopt+=maxhorz                " Scale horizontally on fullscreen
-"set background=light              " Background.
-"set lines=25 columns=100          " Window dimensions.
 
-" Uncomment to use.
-" set guioptions-=r                 " Don't show right scrollbar
-
-
+color ir_black                    " Colorscheme
