@@ -24,6 +24,7 @@ set smartcase                     " But case-sensitive if expression contains a 
 
 set number                        " Show line numbers.
 set ruler                         " Show cursor position.
+set cursorline                    " Highlight cursor line
 
 set incsearch                     " Highlight matches as you type.
 set hlsearch                      " Highlight matches.
@@ -84,3 +85,7 @@ endif
 " Enable syntastic syntax checking
 let g:syntastic_enable_signs=1
 let g:syntastic_quiet_warnings=1
+
+" Language Specific
+" autocmd FileType html set tabstop=2|set shiftwidth=2|softtabstop=2
+
