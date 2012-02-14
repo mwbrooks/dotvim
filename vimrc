@@ -8,8 +8,6 @@ silent! call pathogen#runtime_append_all_bundles()
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
 
-runtime macros/matchit.vim        " Load the matchit plugin.
-
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
 
@@ -28,8 +26,6 @@ set cursorline                    " Highlight cursor line
 
 set incsearch                     " Highlight matches as you type.
 set hlsearch                      " Highlight matches.
-set ignorecase
-set smartcase
 
 set wrap                          " Turn on line wrapping.
 set scrolloff=3                   " Show 3 lines of context around the cursor.
@@ -55,19 +51,14 @@ set laststatus=2                  " Show the status line all the time
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
-" Or use vividchalk
-colorscheme ir_black 
+" Enable 256 colors
+set t_Co=256
 
-" Tab mappings.
-" map <leader>tt :tabnew<cr>
-map <leader>te :tabedit
-map <leader>tc :tabclose<cr>
-map <leader>to :tabonly<cr>
-map <leader>tn :tabnext<cr>
-map <leader>tp :tabprevious<cr>
-map <leader>tf :tabfirst<cr>
-map <leader>tl :tablast<cr>
-map <leader>tm :tabmove
+" Or use vividchalk or solarized
+colorscheme Monokai 
+
+" Use dark background
+set background=dark
 
 " NERDTree configuration
 let NERDTreeIgnore=['\.rbc$', '\~$']
@@ -82,10 +73,5 @@ if has("autocmd")
     \| exe "normal g'\"" | endif
 endif
 
-" Enable syntastic syntax checking
-let g:syntastic_enable_signs=1
-let g:syntastic_quiet_warnings=1
-
 " Language Specific
 " autocmd FileType html set tabstop=2|set shiftwidth=2|softtabstop=2
-

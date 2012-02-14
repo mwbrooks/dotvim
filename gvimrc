@@ -1,18 +1,4 @@
 if has("gui_macvim")
-    " Fullscreen
-    set fuopt=maxhorz,maxvert
-
-    " Command-Return for fullscreen
-    macmenu Window.Toggle\ Full\ Screen\ Mode key=<D-CR>
-
-    " Command-T for CommandT
-    macmenu &File.New\ Tab key=<D-T>
-    map <D-t> :CommandT<CR>
-    imap <D-t> <Esc>:CommandT<CR>
-
-    " Command-Shift-F for Ack
-    map <D-F> :Ack<space>
-
     " Command-/ to toggle comments
     map <D-/> <plug>NERDCommenterToggle<CR>
 
@@ -29,4 +15,7 @@ set guioptions-=T                 " Hide toolbar.
 set guioptions-=L                 " Hide left scrollbar.
 set guioptions-=r                 " Hide right scrollbar.
 
-color ir_black                    " Colorscheme
+set background=dark
+
+" Or use ir_black or vividchalk or solarized
+colorscheme Monokai 
