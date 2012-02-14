@@ -40,13 +40,13 @@ set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
 
 set autoread                      " Auto reload changed files
 
-set tabstop=4                    " Global tab width.
-set shiftwidth=4                 " And again, related.
-set softtabstop=4                " And again, related.
-set expandtab                    " Use spaces instead of tabs
+set tabstop=4                     " Global tab width.
+set shiftwidth=4                  " And again, related.
+set softtabstop=4                 " And again, related.
+set expandtab                     " Use spaces instead of tabs
 
-set list                         " Show invisible chars (tabs, spaces, eof, etc)
-set listchars=tab:›\ ,eol:¬      " Change symbols for a few invisibles
+set list                          " Show invisible chars (tabs, spaces, eof, etc)
+set listchars=tab:›\ ,eol:¬       " Change symbols for a few invisibles
 
 set laststatus=2                  " Show the status line all the time
 
