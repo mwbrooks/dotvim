@@ -1,54 +1,30 @@
-[submodule "bundle/ack.vim"]
-	path = bundle/ack.vim
-	url = git://github.com/mileszs/ack.vim.git
-[submodule "bundle/vim-endwise"]
-	path = bundle/vim-endwise
-	url = git://github.com/tpope/vim-endwise.git
-[submodule "bundle/vim-javascript"]
-	path = bundle/vim-javascript
-	url = git://github.com/pangloss/vim-javascript.git
-[submodule "bundle/vim-surround"]
-	path = bundle/vim-surround
-	url = git://github.com/tpope/vim-surround.git
-[submodule "bundle/vim-cucumber"]
-	path = bundle/vim-cucumber
-	url = git://github.com/tpope/vim-cucumber.git
-[submodule "bundle/vim-rspec"]
-	path = bundle/vim-rspec
-	url = git://github.com/taq/vim-rspec.git
-[submodule "bundle/vim-markdown"]
-	path = bundle/vim-markdown
-	url = git://github.com/tpope/vim-markdown.git
-[submodule "bundle/vim-irblack"]
-	path = bundle/vim-irblack
-	url = git://github.com/mwbrooks/vim-irblack.git
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
-	url = git://github.com/scrooloose/syntastic.git
-[submodule "bundle/vim-unimpaired"]
-	path = bundle/vim-unimpaired
-	url = git://github.com/tpope/vim-unimpaired.git
-[submodule "bundle/vim-align"]
-	path = bundle/vim-align
-	url = git://github.com/tsaleh/vim-align.git
-[submodule "bundle/zoomwin"]
-	path = bundle/zoomwin
-	url = git://github.com/vim-scripts/ZoomWin.git
-[submodule "bundle/textile.vim"]
-	path = bundle/textile.vim
-	url = git://github.com/timcharper/textile.vim.git
-[submodule "bundle/supertab"]
-	path = bundle/supertab
-	url = git://github.com/ervandew/supertab.git
-[submodule "bundle/vim-vividchalk"]
-	path = bundle/vim-vividchalk
-	url = git://github.com/tpope/vim-vividchalk.git
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
-[submodule "bundle/nerdcommenter"]
-	path = bundle/nerdcommenter
-	url = git://github.com/ddollar/nerdcommenter.git
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = git://github.com/wincent/Command-T.git
+[submodule "bundle/molokai"]
+	path = bundle/molokai
+	url = https://github.com/tomasr/molokai.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = git://github.com/ddollar/nerdcommenter.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/robokai"]
+	path = bundle/robokai
+	url = https://github.com/vim-scripts/robokai.git
+[submodule "bundle/vim-irblack"]
+	path = bundle/vim-irblack
+	url = git://github.com/mwbrooks/vim-irblack.git
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = git://github.com/tpope/vim-markdown.git
+[submodule "bundle/vim-monokai"]
+	path = bundle/vim-monokai
+	url = git@github.com:mwbrooks/vim-monokai.git
+[submodule "bundle/vim-railscasts-theme"]
+	path = bundle/vim-railscasts-theme
+	url = git@github.com:mwbrooks/vim-railscasts-theme.git
+[submodule "bundle/vim-vividchalk"]
+	path = bundle/vim-vividchalk
+	url = git://github.com/tpope/vim-vividchalk.git
