@@ -19,3 +19,15 @@ Install
     ln -s /path/to/dotvim ~/.vim
     ln -s /path/to/dotvim/vimrc ~/.vimrc
     ln -s /path/to/dotvim/gvimrc ~/.gvimrc
+
+MacVim Configuration
+--------------------
+
+### Open Tabs in Existing Window
+
+    vim /usr/bin/mvim
+
+    # change:
+    opts=
+    # to:
+    opts="--remote-tab"
