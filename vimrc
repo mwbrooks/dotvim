@@ -67,7 +67,8 @@ let NERDTreeIgnore=['\.rbc$', '\~$']
 map <Leader>n :NERDTreeToggle<CR>
 
 " Command-T configuration
-let g:CommandTMaxHeight=20
+let g:CommandTMaxHeight=15          " Set the number of files shown
+let g:CommandTMatchWindowAtTop=1    " Show Command-T at the top
 
 " Remember last location in file
 if has("autocmd")

@@ -20,6 +20,12 @@ Install
     ln -s /path/to/dotvim/vimrc ~/.vimrc
     ln -s /path/to/dotvim/gvimrc ~/.gvimrc
 
+    # Build Command-T
+
+    cd dotvim/bundle/command-t
+    bundle install
+    rake make
+
 MacVim Configuration
 --------------------
 
