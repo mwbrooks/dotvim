@@ -29,6 +29,7 @@ set hlsearch                      " Highlight matches.
 
 set wrap                          " Turn on line wrapping.
 set scrolloff=3                   " Show 3 lines of context around the cursor.
+set colorcolumn=80                " Set vertical line at 80 character width.
 
 set title                         " Set the terminal's title
 
@@ -70,6 +71,13 @@ map <Leader>n :NERDTreeToggle<CR>
 let g:CommandTMaxHeight=15          " Set the number of files shown
 let g:CommandTMatchWindowAtTop=1    " Show Command-T at the top
 
+" Command-/ to toggle comments
+map <D-/> <plug>NERDCommenterToggle<CR>
+
+" Command-][ to increase/decrease indentation
+vmap <D-]> >gv
+vmap <D-[> <g
+
 " Remember last location in file
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
@@ -77,4 +85,4 @@ if has("autocmd")
 endif
 
 " Language Specific
-" autocmd FileType html set tabstop=2|set shiftwidth=2|softtabstop=2
+autocmd FileType ruby,eruby,yaml,ru set tabstop=2 shiftwidth=2 softtabstop=2 expandtab autoindent
