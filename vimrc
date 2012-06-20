@@ -57,11 +57,11 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLo
 " Enable 256 colors
 set t_Co=256
 
-" Or use vividchalk or solarized
-colorscheme Monokai 
-
 " Use dark background
 set background=dark
+
+let g:molokai_original=1          " dark grey background theme
+colorscheme Monokai               " or molokai, vividchalk, solarized
 
 " NERDTree configuration
 let NERDTreeIgnore=['\.rbc$', '\~$']
