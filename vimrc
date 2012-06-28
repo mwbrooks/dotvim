@@ -63,8 +63,11 @@ set background=dark
 let g:molokai_original=1          " dark grey background theme
 colorscheme Monokai               " or molokai, vividchalk, solarized
 
+" Esc in Normal Mode to clear highlighted search
+nnoremap <esc> :noh<return><esc>
+
 " NERDTree configuration
-let NERDTreeIgnore=['\.rbc$', '\~$']
+let NERDTreeIgnore=['\.rbc$', '\~$', 'node_modules', 'npm-debug\.log']
 map <Leader>n :NERDTreeToggle<CR>
 
 " Command-T configuration
