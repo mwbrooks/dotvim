@@ -31,3 +31,6 @@
 [submodule "bundle/hammer.vim"]
 	path = bundle/hammer.vim
 	url = https://github.com/matthias-guenther/hammer.vim.git
+[submodule "bundle/jshint.vim"]
+	path = bundle/jshint.vim
+	url = git://github.com/wookiehangover/jshint.vim.git
