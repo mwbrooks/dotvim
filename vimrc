@@ -54,6 +54,9 @@ set laststatus=2                  " Show the status line all the time
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
+" VIM's global wildcard ignore
+set wildignore+=*.o,*.obj,.git,node_modules/**,build/**
+
 " Enable 256 colors
 set t_Co=256
 
@@ -67,12 +70,13 @@ colorscheme Monokai               " or molokai, vividchalk, solarized
 nnoremap <esc> :noh<return><esc>
 
 " NERDTree configuration
-let NERDTreeIgnore=['\.rbc$', '\~$', 'node_modules', 'npm-debug\.log']
+let NERDTreeIgnore=['\.rbc$', '\~$', 'build', 'node_modules', 'npm-debug\.log']
 map <Leader>n :NERDTreeToggle<CR>
 
 " Command-T configuration
 let g:CommandTMaxHeight=15          " Set the number of files shown
-let g:CommandTMatchWindowAtTop=1    " Show Command-T at the top
+" let g:CommandTMatchWindowAtTop=1  " Show Command-T at the top
+let g:CommandTCancelMap='<esc>'
 
 " Command-/ to toggle comments
 map <D-/> <plug>NERDCommenterToggle<CR>
