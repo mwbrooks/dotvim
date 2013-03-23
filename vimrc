@@ -55,7 +55,7 @@ set laststatus=2                  " Show the status line all the time
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
 " VIM's global wildcard ignore
-set wildignore+=*.o,*.obj,.git,node_modules/**,build/**
+set wildignore+=*.o,*.obj,.git,*/node_modules/*,*/build/*
 
 " Enable 256 colors
 set t_Co=256
@@ -84,6 +84,16 @@ colorscheme Monokai               " or molokai, vividchalk, solarized
 " NERDTree configuration
 let NERDTreeIgnore=['\.rbc$', '\~$', 'build/', 'node_modules', 'npm-debug\.log']
 map <Leader>n :NERDTreeToggle<CR>
+
+" CTRL+P
+:let g:ctrlp_map = '<Leader>t'
+:let g:ctrlp_match_window_bottom = 0
+:let g:ctrlp_match_window_reversed = 0
+:let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc|wav|mp3|ogg|blend)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|__init__\.py'
+:let g:ctrlp_working_path_mode = 0
+:let g:ctrlp_dotfiles = 0
+:let g:ctrlp_switch_buffer = 0
+:nmap ; :CtrlPBuffer<CR>
 
 " Command-/ to toggle comments
 map <D-/> <plug>NERDCommenterToggle<CR>
