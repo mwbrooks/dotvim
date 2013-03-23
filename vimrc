@@ -68,8 +68,8 @@ set background=dark
 let g:molokai_original=1          " dark grey background theme
 colorscheme Monokai               " or molokai, vividchalk, solarized
 
-" Return in Normal Mode to clear highlighted search
-nnoremap <CR> :noh<CR><CR>
+" Clear search highlight
+:nmap <Leader>q :nohlsearch<CR>
 
 " Toggle paste mode
 :nmap <Leader>o :set paste!<CR>
