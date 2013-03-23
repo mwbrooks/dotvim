@@ -71,6 +71,9 @@ colorscheme Monokai               " or molokai, vividchalk, solarized
 " Return in Normal Mode to clear highlighted search
 nnoremap <CR> :noh<CR><CR>
 
+" Toggle paste mode
+:nmap <Leader>o :set paste!<CR>
+
 " NERDTree configuration
 let NERDTreeIgnore=['\.rbc$', '\~$', 'build/', 'node_modules', 'npm-debug\.log']
 map <Leader>n :NERDTreeToggle<CR>
