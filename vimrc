@@ -60,30 +60,32 @@ set wildignore+=*.o,*.obj,.git,node_modules/**,build/**
 " Enable 256 colors
 set t_Co=256
 
+set grepprg=ack
+
 " Use dark background
 set background=dark
 
 let g:molokai_original=1          " dark grey background theme
 colorscheme Monokai               " or molokai, vividchalk, solarized
 
-" Esc in Normal Mode to clear highlighted search
-nnoremap <esc> :noh<return><esc>
+" Return in Normal Mode to clear highlighted search
+nnoremap <CR> :noh<CR><CR>
 
 " NERDTree configuration
-let NERDTreeIgnore=['\.rbc$', '\~$', 'build', 'node_modules', 'npm-debug\.log']
+let NERDTreeIgnore=['\.rbc$', '\~$', 'build/', 'node_modules', 'npm-debug\.log']
 map <Leader>n :NERDTreeToggle<CR>
 
 " Command-T configuration
 let g:CommandTMaxHeight=15          " Set the number of files shown
 " let g:CommandTMatchWindowAtTop=1  " Show Command-T at the top
-let g:CommandTCancelMap='<esc>'
+" let g:CommandTCancelMap='<esc>'
 
 " Command-/ to toggle comments
 map <D-/> <plug>NERDCommenterToggle<CR>
 
 " Command-][ to increase/decrease indentation
-vmap <D-]> >gv
-vmap <D-[> <g
+" vmap <D-]> >gv
+" vmap <D-[> <g
 
 " Remember last location in file
 if has("autocmd")

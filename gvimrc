@@ -7,8 +7,7 @@ if has("gui_macvim")
     vmap <D-[> <g
 endif
 
-
-set guifont=DejaVuSansMono:h12    " Font family and font size.
+set guifont=Source\ Code\ Pro:h13 " Font family and font size
 set antialias                     " MacVim: smooth fonts.
 set guioptions-=T                 " Hide toolbar.
 set guioptions-=L                 " Hide left scrollbar.
