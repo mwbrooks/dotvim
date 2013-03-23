@@ -1,15 +1,9 @@
-[submodule "bundle/molokai"]
-	path = bundle/molokai
-	url = https://github.com/tomasr/molokai.git
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "bundle/robokai"]
-	path = bundle/robokai
-	url = https://github.com/vim-scripts/robokai.git
 [submodule "bundle/vim-irblack"]
 	path = bundle/vim-irblack
 	url = git://github.com/mwbrooks/vim-irblack.git
@@ -19,12 +13,6 @@
 [submodule "bundle/vim-monokai"]
 	path = bundle/vim-monokai
 	url = git@github.com:mwbrooks/vim-monokai.git
-[submodule "bundle/vim-railscasts-theme"]
-	path = bundle/vim-railscasts-theme
-	url = git@github.com:mwbrooks/vim-railscasts-theme.git
-[submodule "bundle/vim-vividchalk"]
-	path = bundle/vim-vividchalk
-	url = git://github.com/tpope/vim-vividchalk.git
 [submodule "bundle/hammer.vim"]
 	path = bundle/hammer.vim
 	url = https://github.com/matthias-guenther/hammer.vim.git
