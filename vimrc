@@ -85,11 +85,6 @@ colorscheme Monokai               " or molokai, vividchalk, solarized
 let NERDTreeIgnore=['\.rbc$', '\~$', 'build/', 'node_modules', 'npm-debug\.log']
 map <Leader>n :NERDTreeToggle<CR>
 
-" Command-T configuration
-let g:CommandTMaxHeight=15          " Set the number of files shown
-" let g:CommandTMatchWindowAtTop=1  " Show Command-T at the top
-" let g:CommandTCancelMap='<esc>'
-
 " Command-/ to toggle comments
 map <D-/> <plug>NERDCommenterToggle<CR>
 
