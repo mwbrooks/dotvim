@@ -74,6 +74,13 @@ nnoremap <CR> :noh<CR><CR>
 " Toggle paste mode
 :nmap <Leader>o :set paste!<CR>
 
+" Toggle line numbers
+:nmap <Leader>l :setlocal number!<CR>
+
+" j and k treat wrapping as separate rows
+:nmap j gj
+:nmap k gk
+
 " NERDTree configuration
 let NERDTreeIgnore=['\.rbc$', '\~$', 'build/', 'node_modules', 'npm-debug\.log']
 map <Leader>n :NERDTreeToggle<CR>
